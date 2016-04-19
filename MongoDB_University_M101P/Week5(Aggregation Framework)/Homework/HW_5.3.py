@@ -5,7 +5,7 @@ import sys
 # establish a connection to the database
 connection = pymongo.MongoClient("mongodb://localhost")
 
-def best_perfomance_class():
+def find_most_friquent_author():
     # get a handle to the blog database
     db = connection.test
     collection = db.grades
@@ -26,4 +26,4 @@ def best_perfomance_class():
     except Exception as e:
         print ("Unexpected error:", type(e), e) 
         
-best_perfomance_class()
+find_most_friquent_author()
